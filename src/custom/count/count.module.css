@@ -8,12 +8,19 @@
 
 }
 
+
+
 .body div {
     color: #0084CA;
 }
 
 .body span {
-   margin-top: 25%;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    display: flex;
+
+
 }
 
 .minus {

@@ -13,10 +13,11 @@ interface CounterProps {
     id: number;
     currentCount: number;
     className?: any;
+    top?: string
 }
 
 
-const Counter: React.FC<CounterProps> = observer(({width, height, id, currentCount} ) => {
+const Counter: React.FC<CounterProps> = observer(({width, height, id, currentCount, top} ) => {
 
     return (
         <div className={count.body} style={{width: width, height: height}}>
@@ -24,7 +25,7 @@ const Counter: React.FC<CounterProps> = observer(({width, height, id, currentCou
                  className={count.minus}>
                 <img src={minus} alt=""/>
             </div>
-            <span> <strong> {currentCount} </strong>   </span>
+            <span style={{marginTop: top}} > <strong> {currentCount} </strong>   </span>
             <div onClick={() => cardStore.addToCard(id)}>
                 <img src={plus} alt=""/>
             </div>

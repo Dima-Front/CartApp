@@ -35,7 +35,7 @@ const BasketItem: React.FC<BasketItemProps> = observer(({title, desc, id} ) => {
 
                 <div className='counter-group-basket'>
                     <span className='basket-price'>  <strong> {currentPrice}₽ </strong>   </span>
-                    <Counter className='counter-comp' width='67px' height='26px' id={id} currentCount={currentCard.cardCount}/>
+                    <Counter className='counter-comp' width='67px' height='26px' top='16px' id={id} currentCount={currentCard.cardCount}/>
                 </div>
 
             </div>

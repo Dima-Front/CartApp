@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from "../../custom/cards/Card";
+import lupa from "../../icons/lupa.svg"
 
 interface MainProps {
     data: any
@@ -8,11 +9,12 @@ interface MainProps {
 const Main: React.FC<MainProps> = ({data}) => {
 
 
-
-
     return (
         <div  className='container'>
-        <div className='main-input' > <input type='search' placeholder='Поиск'/>  </div>
+        <div className='main-input' >
+            <input type='search' placeholder='Поиск'/>
+            <img className='main-icon' src={lupa} alt=""/>
+        </div>
 
             <div className='main-text'>
                 Из-за ежедневного использования повседневная одежда быстро изнашивается и нуждается в  профессиональном уходе.

@@ -5,6 +5,7 @@ import viber from '../../icons/Viber.svg'
 import whatsApp from '../../icons/Whatsapp.svg'
 import burger from '../../icons/Burger.svg'
 import Dropdown from "../../custom/dropdown/Dropdown";
+import lupa from "../../icons/lupa.svg"
 
 const Header = () => {
     return (
@@ -32,7 +33,10 @@ const Header = () => {
                     <span className='big-text'> YOUR LOGO </span>
                     <span className='little-text'> A D D I T I O N T E X T </span>
                 </div>
-                <div className='header-input'><input  placeholder='Прайс-лист'/> </div>
+                <div className='search-header'>
+                    <input className='header-input' type='search'  placeholder='Прайс-лист'/>
+                    <img className='search-icon-header' src={lupa} alt=""/>
+                </div>
             </div>
 
         </>
